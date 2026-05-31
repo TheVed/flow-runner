@@ -13,9 +13,8 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
     "paths": {
-      "@flow-runner/shared": ["packages/shared/src/index.ts"]
+      "@flow-runner/shared": ["./packages/shared/src/index.ts"]
     }
   }
 }

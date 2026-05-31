@@ -22,3 +22,20 @@ export type WorkflowGraph = {
   nodes: WorkflowNode[];
   edges: WorkflowEdge[];
 };
+
+export type Workflow = {
+  id: WorkflowId;
+  name: string;
+  description?: string;
+  graph: WorkflowGraph;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type CreateWorkflowInput = {
+  name: string;
+  description?: string;
+  graph: WorkflowGraph;
+};
+
+export type UpdateWorkflowInput = Partial<CreateWorkflowInput>;
